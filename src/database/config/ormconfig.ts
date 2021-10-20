@@ -1,8 +1,8 @@
 export function ormConfig(): any {
   return {
     type: 'mongodb',
-    url: 'mongo://localhost:27071',
-    entities: ['./entity/*.ts'],
+    url: 'mongodb://mongodb/nestapi',
+    entities: [__dirname + '/../../components/**/**/*.entity{.ts,.js}'],
     synchronize: true,
     useNewUrlParser: true,
     logging: true,
